@@ -56,14 +56,14 @@ app.post('/upload', upload.single('product'), (req, res) => {
 app.get('/static', (req,res) => {
     
         const prods = [
-            {id:1, title: "Celular", price: 1500, img: "./img/img-11.png"},
-            {id:2, title: "Televisor", price: 1800, img: "./img/img-11.png"},
-            {id:3, title: "Tablet", price: 1200, img: "./img/img-11.png"},
-            {id:4, title: "Notebook", price: 1900, img: "./img/img-11.png"}
+            {id:1, title: "Remera", price: 7500, img: "./img/img-3.png"},
+            {id:2, title: "Traje Vestir", price: 10000, img: "./img/img-4.png"},
+            {id:3, title: "Gorra Urbana", price: 3500, img: "./img/img-11.png"},
+            {id:4, title: "Zapatillas Urbanas", price: 48000, img: "./img/img-6.png"}
 
         ]
 
-        res.render('products', {
+        res.render('templates/products', {
             mostrarProductos: true,
             productos: prods,
         css: 'product.css',

@@ -1,4 +1,4 @@
-import express from 'express'
+import express from 'express';
 import cartRouter from './routes/cartRouter.js'
 import productsRouter from './routes/productsRouter.js'
 import upload from './config/multer.js'
@@ -27,17 +27,14 @@ app.set('views', __dirname + '/views')
 io.on('connection', (socket) => {
     console.log("Conexion con Socket.io")
 
-    socket.on('movimiento', info => { //Cuando el cliente me envia un mensaje,
-    //lo capturo y lo muestro
+    socket.on('movimiento', info => { //Cuando el cliente me envia un mensaje,lo capturo y lo muestro
         console.log(info)
     })
 
-    socket.on('rendirse', info => { //Cuando el cliente me envia un mensaje,
-        //lo capturo y lo muestro
+    socket.on('rendirse', info => { //Cuando el cliente me envia un mensaje,lo capturo y lo muestro
         console.log(info)
         socket.emit('mensaje-jugador', "Te has rendido") //Cliente que envio mensaje
-        socket.broadcast.emit('rendicion', "El jugador se rendio") //Clientes que tengan 
-        //establecida la comunicacion con el servidor
+        socket.broadcast.emit('rendicion', "El jugador se rindio") //Clientes que tengan establecida la comunicacion con el servidor
 })
 })
 

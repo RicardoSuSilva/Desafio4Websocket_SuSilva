@@ -20,7 +20,6 @@ const io = new Server(server)
 
 //Middlewares
 app.use(express.json())
-app.use('/static', express.static(__dirname + '/public'))
 app.engine('handlebars', engine())
 app.set('view engine', 'handlebars')
 app.set('views', __dirname + '/views')
@@ -43,7 +42,8 @@ io.on('connection', (socket) => {
 })
 
 //Routes
-app.use('/api/products', productsRouter)
+app.use('/static', express.static(__dirname + '/public'))
+app.use('api/products', productsRouter, express.static(__dirname +'/public'))
 app.use('/api/cart', cartRouter)
 app.post('/upload', upload.single('product'), (req, res) => {
     try {
@@ -53,6 +53,7 @@ app.post('/upload', upload.single('product'), (req, res) => {
         res.status(500).send("Error al cargar imagen")
     }
 })
+/*
 app.get('/static', (req,res) => {
     
         const prods = [
@@ -68,4 +69,4 @@ app.get('/static', (req,res) => {
             productos: prods,
         css: 'product.css',
     })
-})
+})*/

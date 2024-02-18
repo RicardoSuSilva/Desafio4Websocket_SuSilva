@@ -5,7 +5,9 @@
     "stock":20,
     "code":"A123",
     "thumbnail":[],
-    "id":"014407cd7c708762593b"
+    "id":"014407cd7c708762593b",
+    "img":"img-2.jpg"
+
     },
     
     {
@@ -15,7 +17,9 @@
     "stock":20,
     "code":"Y234",
     "thumbnail":[],
-    "id":"c857b5db5b1e6d6620d8"
+    "id":"c857b5db5b1e6d6620d8",
+    "img":"./img-4.jpg"
+  
     },
     
     {
@@ -25,7 +29,10 @@
     "stock":22,
     "code":"A458",
     "thumbnail":[],
-    "id":"ff948917d7c6c769ea8d"
+    "id":"ff948917d7c6c769ea8d",
+    "img":"../public/img/img-10.png"
+  
+
     },
     
     {
@@ -35,7 +42,9 @@
     "stock":25,
     "code":"L123",
     "thumbnail":[],
-    "id":"a7c9cc1d1ca035d12a74"
+    "id":"a7c9cc1d1ca035d12a74",
+    "img":"./img/img-3.jpg"
+  
     },
     
     {
@@ -45,7 +54,9 @@
     "stock":20,
     "code":"Z789",
     "thumbnail":[],
-    "id":"fd2e15b51b1ce91d2370"
+    "id":"fd2e15b51b1ce91d2370",
+    "img":"./img/img-11.png"
+  
     },
     
     {
@@ -55,7 +66,9 @@
     "stock":20,
     "code":"D654",
     "thumbnail":[],
-    "id":"9fbad54faf579976ae71"
+    "id":"9fbad54faf579976ae71",
+    "img":"./img/img-12.png"
+  
     },
     
     {
@@ -65,5 +78,7 @@
     "stock":20,
     "code":"B963",
     "thumbnail":[],
-    "id":"d0de5f925d4314964923"
+    "id":"d0de5f925d4314964923",
+    "img":"./img/img-6.png"
+  
     }]

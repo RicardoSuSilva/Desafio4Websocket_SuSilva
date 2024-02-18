@@ -1,4 +1,4 @@
-import { Router } from "express"
+import { Router } from "express";
 import { CartManager } from "../config/CartManager.js"
 const cartManager = new CartManager('./src/data/cart.json')
 

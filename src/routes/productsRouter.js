@@ -12,7 +12,7 @@ productsRouter.get('/', async (req, res) => {
         if (!limite)
             limite = prods.length
         const prodsLimit = prods.slice(0, limite)
-        /*res.status(200).send(prodsLimit)*/
+        //res.status(200).send(prodsLimit)
         res.status(200).render('templates/home', {
             mostrarProductos: true,
             productos: prodsLimit,

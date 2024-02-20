@@ -17,7 +17,7 @@ cartRouter.post('/:pid', async (req, res) => {
     try {
         const productId = req.params.pid
         const { quantity } = req.body
-        console.log(productId)
+        //console.log(productId)
         const mensaje = await cartManager.addProductByCart(productId, quantity)
         res.status(200).send(mensaje)
     } catch (error) {

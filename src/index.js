@@ -1,4 +1,4 @@
-import express from 'express'
+import express from 'express';
 import cartRouter from './routes/cartRouter.js'
 import productsRouter from './routes/productsRouter.js'
 import upload from './config/multer.js'
@@ -16,6 +16,7 @@ const PORT = 8000
 const server = app.listen(PORT, () => {
     console.log(`Server on port ${PORT}`)
 })
+
 const io = new Server(server)
 
 //Middlewares
@@ -35,7 +36,7 @@ io.on('connection', (socket) => {
         console.log(info)
         socket.emit('mensaje-jugador', "Te has rendido") //Cliente que envio mensaje
         socket.broadcast.emit('rendicion', "El jugador se rindio") //Clientes que tengan establecida la comunicacion con el servidor
-})
+    })
 })
 
 //Routes

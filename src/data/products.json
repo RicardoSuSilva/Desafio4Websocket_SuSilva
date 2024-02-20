@@ -18,7 +18,7 @@
     "code": "Y234",
     "thumbnail": [],
     "id": "c857b5db5b1e6d6620d8",
-    "img": "./img-4.jpg"
+    "img": "img-4.jpg"
   
     },
     
@@ -30,7 +30,7 @@
     "code": "A458",
     "thumbnail": [],
     "id": "ff948917d7c6c769ea8d",
-    "img": "../public/img/img-10.png"
+    "img": "img-10.png"
   
 
     },
@@ -43,7 +43,7 @@
     "code": "L123",
     "thumbnail": [],
     "id": "a7c9cc1d1ca035d12a74",
-    "img": "./img/img-3.jpg"
+    "img": "img-3.jpg"
   
     },
     
@@ -55,7 +55,7 @@
     "code": "Z789",
     "thumbnail": [],
     "id": "fd2e15b51b1ce91d2370",
-    "img": "./img/img-11.png"
+    "img": "img-11.png"
   
     },
     
@@ -67,7 +67,7 @@
     "code": "D654",
     "thumbnail": [],
     "id": "9fbad54faf579976ae71",
-    "img": "./img/img-12.png"
+    "img": "img-12.png"
   
     },
     
@@ -79,6 +79,6 @@
     "code": "B963",
     "thumbnail": [],
     "id": "d0de5f925d4314964923",
-    "img": "./img/img-6.png"
+    "img": "img-6.png"
   
     }]

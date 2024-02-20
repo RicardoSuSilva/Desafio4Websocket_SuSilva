@@ -23,7 +23,7 @@ export class ProductManager {
         if (newProduct.title && newProduct.description && newProduct.price && newProduct.code && newProduct.stock) {
             const indice = prods.findIndex(prod => prod.code === newProduct.code)
             if (indice === -1) {
-                newProduct.id = crypto.randomBytes(10).toString('hex')
+                newProduct.id = crypto.randomBytes(15).toString('hex')
                 newProduct.status = true
                 if (!newProduct.thumbnail)
                     newProduct.thumbnail = []

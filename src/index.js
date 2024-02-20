@@ -1,4 +1,4 @@
-import express from 'express';
+import express from 'express'
 import cartRouter from './routes/cartRouter.js'
 import productsRouter from './routes/productsRouter.js'
 import upload from './config/multer.js'
@@ -39,8 +39,8 @@ io.on('connection', (socket) => {
 })
 
 //Routes
-app.use('/static', express.static(__dirname + '/public'))
-app.use('api/products', productsRouter, express.static(__dirname +'/public'))
+app.use('/public', express.static(__dirname + '/public'))
+app.use('api/products', productsRouter, express.static(__dirname + '/public'))
 app.use('/api/cart', cartRouter)
 app.post('/upload', upload.single('product'), (req, res) => {
     try {

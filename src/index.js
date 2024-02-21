@@ -40,7 +40,7 @@ io.on('connection', (socket) => {
 })
 
 //Routes
-app.use('/public', express.static(__dirname + '/public'))
+app.use('/static', express.static(__dirname + '/public'))
 app.use('api/products', productsRouter, express.static(__dirname + '/public'))
 app.use('/api/cart', cartRouter)
 app.post('/upload', upload.single('product'), (req, res) => {
